@@ -4,7 +4,7 @@ const WorkAssignModels = require('../../Models/AdminModel/Workassgin');
 
 const assignedwork = async (req, res) => {
     try {
-        const { title, description, assigned_employee, due_date, status } = req.body;
+        const { user_id, title, description, assigned_employee, assigned_date, due_date, status } = req.body;
 
         const newWork = WorkAssignModels({
             title,
