@@ -22,10 +22,8 @@ app.use('/attend', AttendRouter);
 app.use('/leave', LeaveRouter);
 // Admin 
 app.use('/admin', EmpLeaveRouter);
-// app.use('/admin/work', WorkAssignRouter);
-app.use('/admin/work', (req, res) => {
-  res.send("Route is working!");
-});
+app.use('/admin/work', WorkAssignRouter);
+
 
 
 
