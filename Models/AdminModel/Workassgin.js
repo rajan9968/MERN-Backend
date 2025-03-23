@@ -24,5 +24,6 @@ const workassignedSchema = new Schema({
     }
 });
 
-const WorkAssginModels = mongoose.model('workassignedSchema');
+const WorkAssginModels = mongoose.model('workassignedSchema', workassignedSchema);
 module.exports = WorkAssginModels;
+
