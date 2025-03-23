@@ -1,4 +1,4 @@
-const express = require('express');
+const router = require('express').Router();
 const { assignedwork } = require('../../Controller/Admin/WorkAssignController');
 
 router.post('/work', assignedwork);
