@@ -7,9 +7,11 @@ const assignedwork = async (req, res) => {
         const { user_id, title, description, assigned_employee, assigned_date, due_date, status } = req.body;
 
         const newWork = WorkAssignModels({
+            user_id,
             title,
             description,
             assigned_employee,
+            assigned_date,
             due_date,
             status: status || 'pending'
         });
