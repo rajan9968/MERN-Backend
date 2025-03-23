@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const workassignedSchema = new Schema({
+const workAssignedSchema = new Schema({
     title: {
         type: String,
         required: true
@@ -24,6 +24,6 @@ const workassignedSchema = new Schema({
     }
 });
 
-const WorkAssginModels = mongoose.model('workassignedSchema', workassignedSchema);
+const WorkAssginModels = mongoose.model('workassignedSchema', workAssignedSchema);
 module.exports = WorkAssginModels;
 
