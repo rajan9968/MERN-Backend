@@ -22,7 +22,7 @@ app.use('/attend', AttendRouter);
 app.use('/leave', LeaveRouter);
 // Admin 
 app.use('/admin', EmpLeaveRouter);
-app.use('/admin', WorkAssignRouter);
+app.use('/admin2', WorkAssignRouter);
 
 
 
